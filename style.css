@@ -1,0 +1,314 @@
+:root {
+    --font-family: "Poppins", sans-serif;
+    --second-family: "PT Sans", sans-serif;
+    --third-family: "Potta One", sans-serif;
+    --font3: "Baloo Da 2", sans-serif;
+}
+
+
+body {
+    font-family: var(--font-family);
+}
+#nav {
+    padding: 0 !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#nav ul li a {
+    text-transform: uppercase;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 200%;
+    color: #353535;
+    padding: 18px 20px;
+    position: relative;
+}
+
+#nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s cubic-bezier(.05, .71, .93, .59);
+    background: #353535;
+}
+
+#nav ul li a:hover::after {
+    width: 100%;
+}
+/* -----hero start -------*/
+span{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: #353535;
+}
+ h4{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 64px;
+    color: #353535;
+
+}
+ p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 190%;
+    color: #353535;
+}
+.row{
+    align-items: center;
+}
+ .link_btn a {
+    display: inline-flex;
+    align-items: center;
+    background: #FFCC00;
+    line-height: 0;
+    padding: 16px 45px;
+    border-radius: 20px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.link_btn a span{
+    color: #fff;
+    margin-left: 11px;
+}
+.link_btn a:hover{
+    background:#FFCC00;
+    color: #353535;
+    outline: 1px solid #353535;
+}
+.link_btn a:hover span{
+    color: #353535;
+}
+.link-btn a:last-child{
+    background: #FFCC00;
+    border: 1px solid red;
+    color: #353535;
+    margin-left: 40px;
+    padding: 15px 45px;
+
+}
+.link-btn :last-child span{
+    color: #353535;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+   
+}
+ul{
+    list-style-type: none;
+    margin-bottom: 0;
+    display: flex;
+
+}
+ul li a{
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    line-height: 0;
+    color: #000000;
+    padding: 10px;
+    background: #353535;
+    border-radius: 50%;
+    margin-left: 5px;
+    color: #fff;
+
+}
+/* -------hero End------- */
+.mouse{
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50px);
+    
+}
+/* ---------about start---------- */
+
+ #About{
+    position: relative;
+    background: linear-gradient(130deg, #FFCC00, #FBF7AC, #FAFFCB);
+ }
+ #About h4{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 50px;
+    color: #353535;
+ }
+ #About p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 190%;
+    color: #353535;
+ }
+ #About a{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    color: #353535;
+    display: inline-block;
+    text-decoration: none;
+    padding: 17px 44px;
+    outline: 1px solid #000000;
+    border-radius: 20px;
+    
+ }
+ .shape{
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+
+ }
+ /* ---------about end---------- */
+ /* ----Branding start---- */
+ #Branding{
+    background: linear-gradient(130deg, #FFCC00, #FBF7AC, #FAFFCB);
+ }
+ #Branding h4{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 50px;
+    color: #353535;
+ }
+ #Branding p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 190%;
+    color: #353535;
+ }
+ #Branding a{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    color: #353535;
+    display: inline-block;
+    text-decoration: none;
+    padding: 17px 44px;
+    outline: 1px solid #000000;
+    border-radius: 20px;
+ }
+ /* -----Branding end------ */
+ /*------ dising start -----*/
+
+ #design {
+    margin: 100px 0;
+}
+
+ #design .icon span{
+    background: #55852F;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px;
+    border-radius: 50%;
+    color: #fff;
+ }
+ #desing .contains h4{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 180%;
+    color: #353535;
+    margin-bottom: 0;
+ }
+ #desing .contains p{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 180%;
+    color: #353535;
+    margin: 0;
+ }
+ #design .parent {
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: 17px 35px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+}
+#design .icons_parent {
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+    background: #fff;
+    padding: 17px;
+    margin-bottom: 24px;
+    border-radius: 20px;
+}
+#design .main_content .heading {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 50px;
+    text-align: right;
+    color: #353535;
+}
+#design .main_content p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 190%;
+    text-align: right;
+    color: #353535;
+}
+#design .secondary_row{
+    text-align: right;
+    justify-content: end;
+}
+#design .secondary_row h4 {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 40px;
+    text-align: right;
+    color: #353535;
+}
+#design .secondary_row span {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    color: #353535;
+}
+ /*------ dising End -----*/
+
+ /* ----Exprience start ----*/
+
+ #experience .heading h2 {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    color: #353535;
+    margin-bottom: 97px;
+}
+#experience h4 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 180%;
+    color: #353535;
+}
+#experience p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    color: #7a7a7a;
+}
+
+ /* ----Exprience EnD ----*/
+
+ 
+
+
+ 
